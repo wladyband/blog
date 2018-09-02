@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 
     var page = $('html, body');
-    $('a.tooltip').click(function() {
+  $(document).click('a.tooltip', function(){ 
     page.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
