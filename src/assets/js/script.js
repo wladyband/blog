@@ -7,10 +7,10 @@ $(document).ready(function() {
         $(".nav-itens").removeClass("nav-show");        
     });
 
-
+//  $('a.tooltip').click(function() { antes estava assim
 
     var page = $('html, body');
-  $(document).click('a.tooltip', function(){ 
+    $(document).click('a.tooltip', function(){ 
     page.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
