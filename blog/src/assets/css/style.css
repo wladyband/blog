@@ -1,0 +1,305 @@
+body{
+    background: #098778;
+  
+      background: repeating-linear-gradient(
+      90deg,
+      #ffffff,
+      #ffffff 5px,
+      #f7f7f7 10px,
+      #f7f7f7 10px
+      );
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Times New Roman', Times, serif;
+      color: #474747;
+      font-size: 13px;
+  }
+  a:link{
+    text-decoration:none; 
+    
+  }
+
+
+
+
+nav {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 2;
+}
+
+nav .menu {
+    background-color: #007acc;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    width: 50px;
+}
+
+.nav-itens {
+    position: absolute;
+    top: -110px;
+    right: 6px;
+    opacity: 0;
+   	transition: all 0.3s;
+}
+
+.nav-itens a {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #007acc;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.nav-show {
+    opacity: 1;
+}
+
+  
+  header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 19px;
+    background: #007acc;
+    border-bottom: #F5DA81 4px solid;
+  }
+
+header a{
+    color: #ffffff;
+  }
+
+.caixa_corpo{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.caixa_conteudo{
+    position: relative;
+  
+    width: 68%;
+    height: 660px;
+    padding: 10px 10px 10px 10px;
+    float: left;
+   
+}
+
+.caixa_imagem{
+    position: relative;
+    width: 100%;
+    height: 400px;
+   
+}
+.caixa_imagem a img{
+   width: 100%;
+   height: 100%;  
+}
+
+
+.titulo_conteudo{
+    position: relative;
+    
+    width: 100%;
+    height:10%;
+    color: #007acc;
+
+}
+.titulo_conteudo p{
+    font-size: 30px;
+  color:  #007acc;
+
+   
+}
+.previa_conteudo{
+    position: relative;
+    width: 100%;
+    height:16%;
+   
+    color: #474747;
+    margin: 10px 0;
+}
+
+.previa_conteudo p {
+    font-size: 20px;
+}
+
+.previa_conteudo span{
+    font-size: 25px;
+    color: #474747;
+}
+
+.caixa_lateral{
+    position: relative;
+ 
+    width: 29%;
+    height: 1000px;
+    float: left;
+ 
+
+}
+
+
+.foto_lateral{
+    position: relative;
+    margin: 20px 20px 20px 30px;
+    width: 250px;
+    height: 300px;
+  
+}
+
+.foto_lateral a img{
+    width: 100%;
+    height: 300px;
+}
+
+
+
+@media (max-width: 960px) {
+    header{
+        font-size: 13px;
+        
+    }
+    .caixa_conteudo{
+        width: 100%;
+
+       
+    } 
+    .caixa_lateral{
+        width: 100%;
+    }
+    
+    .foto_lateral{
+        margin: 10px 10px 10px 25px;
+      
+    }
+
+    .titulo_conteudo p{
+        font-size: 20px;
+        margin: 0 0 0 10px;
+   }
+  
+    .previa_conteudo p {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+    .caixa_imagem iframe{
+        position: relative;
+        width: 100%;
+        height: 200px;
+       
+    }
+    .caixa_imagem{
+        height: 220px;
+       
+    }
+  }
+  
+  
+  @media (max-width: 1350px) {
+    
+  }
+  
+  
+  
+  @media (max-width: 1280px) {
+   
+  }
+  
+  
+  @media (max-width: 1240px) {
+    
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .caixa_imagem a img{
+        width: 70%;
+        height: 70%;  
+     }
+     
+}
+
+
+
+.redes{
+    position: relative;
+    top: 15px;
+    width: 200px;
+    height: 30px;
+   }
+  
+  .icons ul{
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  
+  .icons ul li{
+    list-style: none;
+   
+  }
+  
+  .icons ul li a{
+    position: relative;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    background: #007acc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 19px;
+    margin: 0  6px;
+    display: block;
+    overflow: hidden;
+    border-radius: 10%;
+    z-index: 1;
+  }
+  
+  .icons ul li a .fa{
+    position: relative;
+    color: #ffffff;
+    transition: .5s;
+  
+  }
+  
+  .icons ul li a:hover .fa{
+    color: #fff;
+    transform: rotateY(360deg);  
+  }
+  
+  .icons ul li a:before{
+      content: '';
+      position: relative;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #f00;
+      transition: .5s;
+      z-index: 2;  
+  }
+  
+  .icons ul li a:hover:before{
+     top: 0;
+  }
+  
+  .facebook{
+    margin: 0px 0px 0px 20%;
+  }
+  

@@ -1,0 +1,148 @@
+
+  <nav>
+      <div (click)="onSubmit()"  class="menu"><i class="material-icons">&#xE145;</i></div>
+      <div class="nav-itens">
+          <a href="#topo" class="tooltip"  >
+              <i class="material-icons">arrow_upward</i>
+              <label class="text_tooltip"></label>
+          </a>
+          <a href="#botao" class="tooltip" >
+              <i class="material-icons">arrow_downward</i>
+              <label class="text_tooltip"></label>
+          </a>
+        
+      </div>
+  </nav>
+
+<div  class="caixa_corpo" onload="setInterval('atualizar()', 100)">
+   
+    <div  class="caixa_conteudo">
+      
+        <div class="ui-g">
+            <div class="ui-g-12 ui-md-6 ui-lg-12 ui-fluid conteudo">
+    
+          
+                          <img class="node" src="../../../assets/img/node.jpeg"> 
+                  
+                            <div id="topo" class="_post" >
+                              <div class="titulo_post" id="topo">
+                                <a>Paginação no Node Express</a>  
+                              </div>
+                              <div class="titulo_coment">
+                                <p>
+                                  Acredito que muitos programadores em Java ou em PHP e outras linguagens  
+                                  mesmo com pouca experiência saibam como implementar no back-end paginação, 
+                                  pois o que vou apresentar aqui o uso da biblioteca chamada <a href="https://www.npmjs.com/package/api-query-params">api-query-params</a> , 
+                                  eu acho a documentação bem intuitiva, mais tudo fica muito mais claro quando temos um exemplo prático, e é o que vamos ver.
+                                </p>
+                                <br>
+                                <p>
+                                  Vamos repassar seu uso:
+                                </p>
+                                <br>
+                                <p>
+                                    Primeiro, instale, no meu caso eu usei  o módulo  npm;
+                                </p>
+                                <br>
+                                <p class="codigo">
+                                    npm i --save api-query-params
+                                </p>
+                  
+                                <br>
+                                <p>
+                                    No controlador irá realizar as seguintes importações;
+                                </p>  
+                                <p>
+                                    Essa é da biblioteca;
+                                </p>
+                                <p class="codigo">
+                                    var aqp = require('api-query-params');
+                                </p>
+                                <p>
+                                    E essa é da entidade menu;
+                                </p>
+                                <p class="codigo">
+                                    var Menus = require('../models/menu');
+                                </p>
+                                <br>
+                                <h4>
+                                    Estamos supondo que nossa entidade esteja dessa forma;
+                                </h4>
+                                <br>
+                                <img class="paginate" src="../../../assets/img/entidade.PNG" >
+                              </div>
+                              <br>
+                              <br>
+                              <p class="comennt">
+                                  Em seguida, se observamos a documentação da biblioteca deixaremos código dessa forma;
+                              </p>
+                              <br>
+                              <img class="paginate" src="../../../assets/img/paginate.PNG" >
+                              
+                              <br>
+                              <br>
+                              <p class="comennt">
+                                  Eu configurei a rota para está dessa forma;
+                              </p>
+                              <br>
+                              <p class="comennt">
+                                  Clique na Imagem;
+                              </p>
+                              <br>
+                              <a [routerLink]="['/image1']"><img class="paginate" src="../../../assets/img/paginate.gif" ></a> 
+                  
+                            <br>
+                            <br>     
+                      <p class="comennt">
+                          Na imagem você pode perceber que foram realizadas várias consultas com paginação.
+                  
+                          Skip é uma variável para referenciar a página, e limit é uma variável para referenciar a quantidade de registros que serão exibidos em cada página.
+                          
+                      </p>
+                  <br>
+                  <br>
+                      <div class="titulo_post" id="botao">
+                          <a>Pesquisa Metamodel com Node Express</a>  
+                        </div>
+                      <br>
+                      <p class="comennt">
+                          A linguagem de programação que iniciei para a minha carreira como analista de sistemas  foi o Java, e em Java você conhece como Metamodel do JPA para realizar várias consultas de mais de um atributo da entidade, e é o que iremos vê, porém com Node Express, na prática seria algo assim como na imagem abaixo;
+                  
+                      </p>
+                      <br>
+                      <p class="comennt">
+                          Clique na Imagem;
+                      </p>
+                      <a [routerLink]="['/image2']"> <img class="paginate" src="../../../assets/img/metamodel.gif" > </a>
+                      <br>
+                      <br>
+                      <p class="comennt">
+                          O código seria esse abaixo;
+                      </p>
+                      <br>
+                      <img src="../../../assets/img/metamodel.PNG" >
+                  </div><!--termina o post-->
+      
+             
+                </div>
+       </div>
+           
+  </div>
+
+
+  
+  <div class="caixa_lateral" *ngIf="innerWidth > 960">
+      <div class="foto_lateral">
+        <a [routerLink]="['/curriculo']"> <img src="../assets/img/wladimir.png" ></a> 
+      </div>
+     
+          <div class="redes">
+            <div class="icons">
+              <ul>
+                <li class="facebook"><a href="https://www.facebook.com/wladimir.bandeira"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/wladimir-bandeira-409a4429/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/wladyband/sistema_vendas_online_restaurante"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+        </div> 
+    </div>

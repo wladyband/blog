@@ -1,0 +1,51 @@
+
+
+
+<div  class="caixa_corpo">
+   
+  <div  class="caixa_conteudo">
+
+
+            <div id="topo" class="caixa_imagem">
+              <a [routerLink]="['/node_implement_paginate']"><img src="../assets/img/node.jpeg"></a> 
+            </div>
+            <div class="titulo_conteudo">
+              <a [routerLink]="['/node_implement_paginate']">  <p>Como implementar consultas e paginação</p> </a> 
+            </div>  
+          <div class="previa_conteudo">
+                <p>A finalidade do blog tem como objetivo ajudar pessoas em dúvidas específicas e mostrar um pouco do meu trabalho.</p> 
+                
+          </div>
+ 
+
+
+       <div id="botao" class="caixa_imagem">
+            <iframe width="720" height="400" src="https://www.youtube.com/embed/K7iSjjL1wJg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+         <div class="titulo_conteudo">
+              <p>Vídeo demonstrativo do projeto vendas online</p> 
+         </div>  
+        <div class="previa_conteudo">
+             <p>No vídeo é um demonstrativo de um projeto feito Angular com Node Express.</p> Caso estejam interessados no meu   <a [routerLink]="['/curriculo']"><span>currículo</span></a>    
+        </div>
+
+         
+    </div><!--final do conteúdo-->
+
+    <div class="caixa_lateral" *ngIf="innerWidth > 960">
+        <div class="foto_lateral">
+          <a [routerLink]="['/curriculo']"> <img src="../assets/img/wladimir.png" ></a> 
+        </div>
+       
+            <div class="redes">
+              <div class="icons">
+                <ul>
+                  <li class="facebook"><a href="https://www.facebook.com/wladimir.bandeira"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/wladimir-bandeira-409a4429/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  <li><a href="https://github.com/wladyband/sistema_vendas_online_restaurante"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+          </div> 
+      </div>
+
+</div>
